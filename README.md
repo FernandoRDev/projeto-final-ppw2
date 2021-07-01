@@ -4,8 +4,11 @@ Dnd points
 1. /dubladores
 2. /protagonistas
 
-Parametros em ambos  
-string q = query string para filtrar no campo nome 
+Parametros em ambos   
+String nome = recupero pelo nome  
+
+Parametros para dubladores  
+Boolean show = define se vai ser renderizado o objeto da api externa    
 ##
 
 Bibliotecas  
