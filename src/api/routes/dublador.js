@@ -38,7 +38,7 @@ route.get('/:id', async(req,res,next) => {
         
         if(dublador.anime) {            
             try {
-                var anime = await axios.get('http://localhost:3000/animes/'+dublador.anime)
+                var anime = await axios.get('https://api-anime-temporada.herokuapp.com/animes/'+dublador.anime)
                 if(anime.status === 200) {
                     dublador.anime = anime.data  
                 }    
