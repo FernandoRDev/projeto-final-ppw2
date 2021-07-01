@@ -10,7 +10,7 @@ route.get('/', async function(req, res, next){
         let filter = {}
         if(req.query.nome) filter.nome = req.query.nome
         
-        const limit = Math.min(parseInt(req.query.limit), 10) || 10
+        const limit = Math.min(parseInt(req.query.limit), 100) || 100
         const skip = parseInt(req.query.skip) || 0
         
         let protagonistas = []

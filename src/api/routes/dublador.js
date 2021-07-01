@@ -11,7 +11,7 @@ route.get('/', async function(req, res, next){
         let filter = {}
         if(req.query.nome) filter.nome = req.query.nome
         
-        const limit = Math.min(parseInt(req.query.limit), 10) || 10
+        const limit = Math.min(parseInt(req.query.limit), 100) || 100
         const skip = parseInt(req.query.skip) || 0
         
         let dubladores = []
@@ -36,7 +36,7 @@ route.get('/:id', async(req,res,next) => {
             throw new Error ("Nenhum dublador com este id encontrado")
         }
         
-        if(dublador.anime) {            
+        if(dublador.anime && req.query.show==="true") {            
             try {
                 var anime = await axios.get('https://api-anime-temporada.herokuapp.com/animes/'+dublador.anime)
                 if(anime.status === 200) {
