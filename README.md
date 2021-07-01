@@ -1,10 +1,10 @@
-# Get genres and studios from MyAnimiList
+# Get Protagonistas e Dubladores  
 
-end points
+Dnd points
 1. /dubladores
 2. /protagonistas
 
-parametros em ambos  
+Parametros em ambos  
 string q = query string para filtrar no campo nome 
 ##
 
