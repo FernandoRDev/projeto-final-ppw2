@@ -1,6 +1,6 @@
 # Get Protagonistas e Dubladores  
 
-Dnd points
+End points
 1. /dubladores
 2. /protagonistas
 
